@@ -8,6 +8,8 @@ import TeacherRating from './components/TeacherRating';
 import TeacherAbout from './components/TeacherAbout';
 import AboutCourse from './components/AboutCourse';
 import CourseMain from './components/CourseMain';
+import ArticlesCarousel from './components/ArticlesCarousel';
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
     <>
    <Navbar/>
    <CourseMain/>
+   <ArticlesCarousel/>
    <Accordion title={"פירוט דירוג"} content={<RatingDisplay/>}/>
    <Accordion title={"פרטים יבשים על הקורס"} content={<AboutCourse/>}/>
    <Accordion title={"הכירו את המרצה"} content={<TeacherAbout/>}/>
