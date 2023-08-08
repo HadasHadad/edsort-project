@@ -11,11 +11,11 @@ import shekel from '../assets/icons/shekel.png'
 export default function CourseMain() {
   return (
     <>
-       <div className='flex justify-center '>
-        <div className='w-20 h-20 rounded-sm'>
-        <img className='c' src={barIlan} alt="BarIlan" />
+       <div className='flex  justify-center relative'>
+        <div className='w-20 h-20 rounded-sm mx-auto z-10 relative -mt-10 bg-gray-100 flex justify-center items-center'>
+        <img className='place-self-center max-w-full max-h-full ' src={barIlan} alt="BarIlan" />
         </div>
-        <img className= '' src={ticket} alt="ticket" />
+        <img className= 'place-self-start ml-4 relative z-0' src={ticket} alt="ticket" />
        </div>
        <div>
         <div className='flex justify-between'>
@@ -43,8 +43,8 @@ export default function CourseMain() {
        </div>
        <div className='flex justify-center'>
         <p>13000</p>
-        <div className='h-2 w-2 flex justify-center content-center'>
-        <img src={shekel} alt="shekel" />
+        <div className='h-2 w-2 flex justify-center items-center '>
+        <img className='place-self-center ' src={shekel} alt="shekel" />
         </div>
        </div>
     </>

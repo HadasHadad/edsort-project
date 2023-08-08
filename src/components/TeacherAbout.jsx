@@ -7,7 +7,7 @@ export default function TeacherAbout() {
             <div className="mr-5 flex flex-col items-center">
                 <div className="relative h-20 w-20">
                     <img className="h-full w-full rounded-md" src={teacherImage} alt="Teacher" />
-                    <p className="absolute bottom-0 left-0 right-0 px-1 py-1 rounded border bg-white text-xs font-assistant">
+                    <p className="absolute text-center bottom-0 left-0 right-0 px-1 py-1 rounded border bg-white text-xs font-assistant">
                         קובי קובי
                     </p>
                 </div>

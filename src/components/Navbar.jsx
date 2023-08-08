@@ -1,29 +1,17 @@
 import React from 'react';
-import menuIcon from '../assets/icons/menu.svg'
+import SearchBar from './SearchBar';
+import Menu from './Menu';
 import image from '../assets/images/bgBlue.png'
-import searchIcon from '../assets/icons/search.svg'
+
 const Navbar = () => {
     
   return (
-    <nav className=" p-4 h-40" style={{ backgroundImage:`url(${image})` }}>
-      <div className="flex items-center justify-between ">
-      <img src={menuIcon} alt="SVG menu "/>
+    <nav className=" p-4 h-40 relative" style={{ backgroundImage:`url(${image})` ,backgroundSize: 'cover',
+    backgroundPosition: 'center'}}>
+      <div className="flex items-center justify-around ">
+      <Menu/>
     
-        <div className="flex  items-center bg-white rounded-lg px-2  ">
-          <input
-            type="text"
-            placeholder="חפש"
-            style={{
-                backgroundImage: `url(${searchIcon})`,
-                backgroundPosition: "right 5px center",
-                backgroundRepeat: "no-repeat",
-                paddingRight: "40px"
-                
-              }}
-            className="py-2 px-3 bg-transparent focus:outline-none  "
-          />
-         
-        </div>
+      <SearchBar/>
       </div>
     </nav>
   );
