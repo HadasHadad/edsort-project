@@ -5,11 +5,11 @@ import searchIcon from '../assets/icons/search.svg'
 const Navbar = () => {
     
   return (
-    <nav className=" p-4" style={{ backgroundImage:`url(${image})` }}>
-      <div className="flex items-center justify-evenly ">
+    <nav className=" p-4 h-40" style={{ backgroundImage:`url(${image})` }}>
+      <div className="flex items-center justify-between ">
       <img src={menuIcon} alt="SVG menu "/>
     
-        <div className="flex items-center bg-white rounded-lg px-2  ">
+        <div className="flex  items-center bg-white rounded-lg px-2  ">
           <input
             type="text"
             placeholder="חפש"
@@ -20,7 +20,7 @@ const Navbar = () => {
                 paddingRight: "40px"
                 
               }}
-            className="py-2 px-3 bg-transparent focus:outline-none "
+            className="py-2 px-3 bg-transparent focus:outline-none  "
           />
          
         </div>

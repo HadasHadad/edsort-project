@@ -10,12 +10,13 @@ const Accordion = ({ title, content }) => {
   return (
     <div className="border rounded-md shadow-md">
       <div
-        className="flex items-center p-4 cursor-pointer"
+        className="flex justify-between items-center p-4 cursor-pointer"
         onClick={toggleAccordion}
       >
-        <h2 className="text-lg font-semibold">{title}</h2>
-       <img src={icon} alt="arrow" />
+        <h2 className="text-xs font-assistant">{title}</h2>
+       <img  src={icon} alt="arrow" />
       </div>
+      <hr />
       {isOpen && <div className="p-4">{content}</div>}
     </div>
   );
